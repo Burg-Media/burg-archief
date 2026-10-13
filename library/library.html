@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="pageTitleLibrary">My archive · Burg Archive</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="library.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <a class="brand" href="library.html">
+        <img src="../images/icon_32.png" alt="" width="22" height="22" />
+        <span data-i18n="extName">Burg Archive</span>
+      </a>
+      <nav>
+        <a href="library.html" class="on" data-i18n="navArchive">Archive</a>
+        <a href="../site/site.html" data-i18n="saveSite">Save whole site</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <p class="kicker" id="summary" data-i18n="loading">Loading…</p>
+      <h1 class="title" data-i18n="myArchive">My archive</h1>
+      <p class="muted lead" data-i18n="libraryLead">Stored locally in this browser. Nothing is uploaded.</p>
+
+      <div class="controls">
+        <input type="search" id="search" placeholder="Search titles, URLs, tags, notes and the full text" data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
+        <select id="sort" aria-label="Sort" data-i18n-aria-label="sortLabel">
+          <option value="new" data-i18n="sortNew">Newest first</option>
+          <option value="old" data-i18n="sortOld">Oldest first</option>
+          <option value="title" data-i18n="sortTitle">Title</option>
+          <option value="host" data-i18n="sortHost">Site</option>
+          <option value="size" data-i18n="sortSize">Largest first</option>
+        </select>
+      </div>
+      <div class="filters">
+        <button class="chip on" data-kind="" data-i18n="all">All</button>
+        <button class="chip" data-kind="html">HTML</button>
+        <button class="chip" data-kind="mhtml">MHTML</button>
+        <label class="check latest"><input type="checkbox" id="latest-only" /> <span data-i18n="latestOnly">Only the newest version per URL</span></label>
+      </div>
+      <div class="filters" id="tag-filters"></div>
+      <div class="filters" id="run-filters"></div>
+
+      <div id="selection" class="selection" hidden>
+        <span id="selection-count"></span>
+        <button id="sel-zip" class="primary small" data-i18n="downloadZip">Download as ZIP</button>
+        <button id="sel-compare" class="small" data-i18n="compare">Compare</button>
+        <input type="text" id="sel-tags" placeholder="Add tags" data-i18n-placeholder="addTagsPlaceholder" />
+        <button id="sel-tag" class="small" data-i18n="add">Add</button>
+        <button id="sel-delete" class="danger small" data-i18n="delete">Delete</button>
+        <button id="sel-clear" class="small" data-i18n="clearSelection">Clear selection</button>
+      </div>
+      <div id="notice" class="notice" hidden></div>
+
+      <div id="grid" class="grid"></div>
+    </main>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/db.js"></script>
+    <script src="../lib/zip.js"></script>
+    <script src="../lib/util.js"></script>
+    <script src="library.js"></script>
+  </body>
+</html>

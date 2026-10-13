@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="pageTitleCompare">Compare · Burg Archive</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="compare.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <a class="brand" href="../library/library.html">
+        <img src="../images/icon_32.png" alt="" width="22" height="22" />
+        <span data-i18n="extName">Burg Archive</span>
+      </a>
+      <nav>
+        <a href="../library/library.html" data-i18n="navArchive">Archive</a>
+        <a href="../site/site.html" data-i18n="saveSite">Save whole site</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <p class="kicker" id="url"></p>
+      <h1 class="title" data-i18n="compareTitle">Compare versions</h1>
+
+      <div id="missing" class="notice error" data-i18n="compareMissing" hidden>One of the two versions no longer exists.</div>
+
+      <div id="content" hidden>
+        <div class="sides">
+          <div class="side-card a">
+            <span class="lbl" data-i18n="old">Old</span>
+            <select id="pick-a" aria-label="Old version" data-i18n-aria-label="oldVersion"></select>
+            <span class="side-title" id="title-a"></span>
+          </div>
+          <button id="swap" class="small" title="Swap" data-i18n-title="swap">⇄</button>
+          <div class="side-card b">
+            <span class="lbl" data-i18n="new">New</span>
+            <select id="pick-b" aria-label="New version" data-i18n-aria-label="newVersion"></select>
+            <span class="side-title" id="title-b"></span>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div><strong id="s-del">0</strong><span data-i18n="linesRemoved">lines removed</span></div>
+          <div><strong id="s-add">0</strong><span data-i18n="linesAdded">lines added</span></div>
+          <div><strong id="s-mod">0</strong><span data-i18n="linesChanged">changed</span></div>
+          <div><strong id="s-same">0</strong><span data-i18n="linesSame">unchanged</span></div>
+        </div>
+
+        <div class="tabs" role="tablist">
+          <button role="tab" data-tab="text" class="on" data-i18n="tabText">Text</button>
+          <button role="tab" data-tab="seo" data-i18n="tabSeo">Properties</button>
+          <button role="tab" data-tab="visual" data-i18n="tabVisual">Side by side</button>
+          <label class="check only"><input type="checkbox" id="only-changes" checked /> <span data-i18n="onlyChanges">Only changes</span></label>
+        </div>
+
+        <section id="tab-text">
+          <div id="diff" class="diff"></div>
+        </section>
+        <section id="tab-seo" hidden>
+          <table class="seo">
+            <thead><tr><th></th><th data-i18n="old">Old</th><th data-i18n="new">New</th></tr></thead>
+            <tbody id="seo-rows"></tbody>
+          </table>
+        </section>
+        <section id="tab-visual" hidden>
+          <div class="frames">
+            <iframe id="frame-a" title="Old version" data-i18n-title="oldVersion" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe>
+            <iframe id="frame-b" title="New version" data-i18n-title="newVersion" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe>
+          </div>
+          <p class="muted hint" data-i18n="mhtmlNoPreview">MHTML versions can't be shown here; you see their thumbnail instead.</p>
+        </section>
+      </div>
+    </main>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/db.js"></script>
+    <script src="../lib/diff.js"></script>
+    <script src="../lib/util.js"></script>
+    <script src="compare.js"></script>
+  </body>
+</html>

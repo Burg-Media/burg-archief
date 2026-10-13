@@ -1,0 +1,608 @@
+{
+  "lang": {
+    "message": "nl"
+  },
+  "locale": {
+    "message": "nl-NL"
+  },
+  "extName": {
+    "message": "Burg Archief"
+  },
+  "extDescription": {
+    "message": "Bewaar pagina's als één los HTML-bestand of MHTML, doorzoek je archief, vergelijk versies en bekijk oude versies op archive.org."
+  },
+  "cmdSavePage": {
+    "message": "Pagina bewaren in het archief"
+  },
+  "menuSavePage": {
+    "message": "Pagina bewaren in Burg Archief"
+  },
+  "menuOpenLibrary": {
+    "message": "Mijn archief openen"
+  },
+  "menuSaveSite": {
+    "message": "Hele site bewaren…"
+  },
+  "errAlreadySaving": {
+    "message": "Deze pagina wordt al bewaard."
+  },
+  "badgeSaved": {
+    "message": "Burg Archief: bewaard ({0})"
+  },
+  "badgeError": {
+    "message": "Burg Archief: {0}"
+  },
+  "errNotCapturable": {
+    "message": "Deze pagina kan niet bewaard worden (alleen gewone http- en https-pagina's)."
+  },
+  "errNoContent": {
+    "message": "De pagina gaf geen inhoud terug. Herlaad de pagina en probeer opnieuw."
+  },
+  "progScroll": {
+    "message": "Pagina doorlopen voor lazy-loading…"
+  },
+  "progThumb": {
+    "message": "Miniatuur maken…"
+  },
+  "progMhtml": {
+    "message": "MHTML maken…"
+  },
+  "progFreeze": {
+    "message": "Pagina bevriezen…"
+  },
+  "progResources": {
+    "message": "Bronbestanden ophalen ({0}/{1})…"
+  },
+  "progSaving": {
+    "message": "Opslaan…"
+  },
+  "savedWith": {
+    "message": "Bewaard met Burg Archief"
+  },
+  "stampText": {
+    "message": "Bewaard met Burg Archief op {0}"
+  },
+  "pageFallback": {
+    "message": "pagina"
+  },
+  "overviewFile": {
+    "message": "OVERZICHT.html"
+  },
+  "overviewIntro": {
+    "message": "{0} pagina's, bewaard met Burg Archief. HTML-bestanden openen in elke browser; MHTML in Chrome of Edge."
+  },
+  "pageOne": {
+    "message": "{0} pagina"
+  },
+  "pageMany": {
+    "message": "{0} pagina's"
+  },
+  "savePage": {
+    "message": "Pagina bewaren"
+  },
+  "unsupportedPage": {
+    "message": "Deze pagina kan niet bewaard worden. Alleen gewone http- en https-pagina's."
+  },
+  "format": {
+    "message": "Formaat"
+  },
+  "fmtHtml": {
+    "message": "Los HTML-bestand"
+  },
+  "fmtMhtmlFast": {
+    "message": "MHTML (snel)"
+  },
+  "tagsPlaceholder": {
+    "message": "Tags, gescheiden door komma's"
+  },
+  "notePlaceholder": {
+    "message": "Notitie (optioneel)"
+  },
+  "lazyLabel": {
+    "message": "Eerst doorscrollen (laadt lazy-loaded afbeeldingen)"
+  },
+  "stampLabel": {
+    "message": "Datum en adres zichtbaar in de pagina (bewijs)"
+  },
+  "historyTitle": {
+    "message": "Deze pagina in je archief"
+  },
+  "historyText": {
+    "message": "{0}× bewaard · laatst {1}"
+  },
+  "openLatest": {
+    "message": "Laatste bekijken"
+  },
+  "saveCompare": {
+    "message": "Bewaren en vergelijken"
+  },
+  "wbCalendar": {
+    "message": "Alle versies"
+  },
+  "wbOldest": {
+    "message": "Oudste"
+  },
+  "wbNewest": {
+    "message": "Nieuwste"
+  },
+  "wbSave": {
+    "message": "Nu archiveren"
+  },
+  "wbDate": {
+    "message": "Datum"
+  },
+  "wbAround": {
+    "message": "Versie rond datum"
+  },
+  "wbAroundThis": {
+    "message": "Rond deze datum"
+  },
+  "wbHint": {
+    "message": "Opent archive.org in een nieuw tabblad."
+  },
+  "myArchive": {
+    "message": "Mijn archief"
+  },
+  "saveSite": {
+    "message": "Hele site bewaren"
+  },
+  "shortcut": {
+    "message": "Sneltoets"
+  },
+  "madeBy": {
+    "message": "Gemaakt door"
+  },
+  "notAvailable": {
+    "message": "Niet beschikbaar"
+  },
+  "starting": {
+    "message": "Starten…"
+  },
+  "unknownError": {
+    "message": "Onbekende fout"
+  },
+  "savedLabel": {
+    "message": "Bewaard"
+  },
+  "view": {
+    "message": "Bekijken"
+  },
+  "pageTitleLibrary": {
+    "message": "Mijn archief · Burg Archief"
+  },
+  "navArchive": {
+    "message": "Archief"
+  },
+  "loading": {
+    "message": "Laden…"
+  },
+  "libraryLead": {
+    "message": "Lokaal opgeslagen in deze browser. Niets wordt geüpload."
+  },
+  "searchPlaceholder": {
+    "message": "Zoek in titels, adressen, tags, notities en de volledige tekst"
+  },
+  "sortLabel": {
+    "message": "Sorteren"
+  },
+  "sortNew": {
+    "message": "Nieuwste eerst"
+  },
+  "sortOld": {
+    "message": "Oudste eerst"
+  },
+  "sortTitle": {
+    "message": "Titel"
+  },
+  "sortHost": {
+    "message": "Site"
+  },
+  "sortSize": {
+    "message": "Grootste eerst"
+  },
+  "all": {
+    "message": "Alles"
+  },
+  "none": {
+    "message": "Niets"
+  },
+  "latestOnly": {
+    "message": "Alleen nieuwste versie per adres"
+  },
+  "downloadZip": {
+    "message": "Download als ZIP"
+  },
+  "compare": {
+    "message": "Vergelijken"
+  },
+  "addTagsPlaceholder": {
+    "message": "Tags toevoegen"
+  },
+  "add": {
+    "message": "Toevoegen"
+  },
+  "delete": {
+    "message": "Verwijderen"
+  },
+  "clearSelection": {
+    "message": "Selectie wissen"
+  },
+  "select": {
+    "message": "Selecteren"
+  },
+  "versionsOfUrl": {
+    "message": "{0} versies van dit adres"
+  },
+  "libraryEmpty": {
+    "message": "Nog niets bewaard. Klik op het Burg Archief-icoon op een pagina, of druk Alt+Shift+A."
+  },
+  "nothingFound": {
+    "message": "Niets gevonden."
+  },
+  "showMore": {
+    "message": "Meer tonen ({0})"
+  },
+  "selectedCount": {
+    "message": "{0} geselecteerd"
+  },
+  "pickTwo": {
+    "message": "Kies precies twee pagina's"
+  },
+  "makingZip": {
+    "message": "ZIP maken…"
+  },
+  "zipMade": {
+    "message": "ZIP gemaakt: {0} bestanden, {1}."
+  },
+  "zipFailed": {
+    "message": "ZIP maken mislukt: {0}"
+  },
+  "tagsAdded": {
+    "message": "Tags toegevoegd aan {0} pagina's."
+  },
+  "confirmDeleteCount": {
+    "message": "Zeker? {0} weg"
+  },
+  "deletedOne": {
+    "message": "{0} pagina verwijderd."
+  },
+  "deletedMany": {
+    "message": "{0} pagina's verwijderd."
+  },
+  "pageTitleSite": {
+    "message": "Hele site bewaren · Burg Archief"
+  },
+  "siteKicker": {
+    "message": "Vóór een redesign of migratie"
+  },
+  "siteLead": {
+    "message": "Zoek de pagina's van een site via de sitemap of door links te volgen, en bewaar ze allemaal. Daarna download je alles als één ZIP waarin de links tussen de pagina's gewoon werken."
+  },
+  "stepFind": {
+    "message": "1 · Pagina's zoeken"
+  },
+  "startUrl": {
+    "message": "Startadres"
+  },
+  "startPlaceholder": {
+    "message": "https://voorbeeld.nl/"
+  },
+  "method": {
+    "message": "Methode"
+  },
+  "methodBoth": {
+    "message": "Sitemap, anders links volgen"
+  },
+  "methodSitemap": {
+    "message": "Alleen sitemap"
+  },
+  "methodLinks": {
+    "message": "Alleen links volgen"
+  },
+  "depth": {
+    "message": "Diepte (links volgen)"
+  },
+  "depth1": {
+    "message": "1 klik vanaf start"
+  },
+  "depth2": {
+    "message": "2 klikken"
+  },
+  "depth3": {
+    "message": "3 klikken"
+  },
+  "depth5": {
+    "message": "5 klikken"
+  },
+  "maxPages": {
+    "message": "Maximaal aantal pagina's"
+  },
+  "samePath": {
+    "message": "Alleen pagina's onder het pad van het startadres"
+  },
+  "findPages": {
+    "message": "Pagina's zoeken"
+  },
+  "stepPick": {
+    "message": "2 · Kiezen"
+  },
+  "filterPlaceholder": {
+    "message": "Filter op adres"
+  },
+  "stepRun": {
+    "message": "3 · Bewaren"
+  },
+  "fmtMhtmlFaster": {
+    "message": "MHTML (sneller)"
+  },
+  "waitAfterLoad": {
+    "message": "Wachten na laden"
+  },
+  "wait05": {
+    "message": "0,5 seconde"
+  },
+  "wait15": {
+    "message": "1,5 seconde"
+  },
+  "wait3": {
+    "message": "3 seconden"
+  },
+  "wait6": {
+    "message": "6 seconden"
+  },
+  "tagsExample": {
+    "message": "bijv. voor-redesign"
+  },
+  "lazySite": {
+    "message": "Elke pagina eerst doorscrollen (lazy-loading)"
+  },
+  "siteHint": {
+    "message": "De pagina's worden geopend in een apart venster dat je niet hoeft te bekijken; laat het open tot alles klaar is. Laat ook dit tabblad open. Ingelogde pagina's worden bewaard zoals jij ze ziet."
+  },
+  "startSaving": {
+    "message": "Bewaren starten"
+  },
+  "stop": {
+    "message": "Stoppen"
+  },
+  "viewInArchive": {
+    "message": "Bekijk in archief"
+  },
+  "enterValidUrl": {
+    "message": "Vul een geldig adres in (https://…)."
+  },
+  "readingSitemap": {
+    "message": "Sitemap lezen: {0}"
+  },
+  "followingLinks": {
+    "message": "Links volgen (diepte {0}): {1} gevonden"
+  },
+  "foundSitemap": {
+    "message": "{0} gevonden via de sitemap."
+  },
+  "foundLinks": {
+    "message": "{0} gevonden via links."
+  },
+  "noPagesFound": {
+    "message": "Geen pagina's gevonden."
+  },
+  "findFailed": {
+    "message": "Zoeken mislukt: {0}"
+  },
+  "statusBusy": {
+    "message": "bezig"
+  },
+  "statusOk": {
+    "message": "bewaard"
+  },
+  "statusErr": {
+    "message": "mislukt"
+  },
+  "statusSkip": {
+    "message": "gestopt"
+  },
+  "pickedCount": {
+    "message": "{0} van {1} gekozen"
+  },
+  "opening": {
+    "message": "Openen: {0}"
+  },
+  "failedMsg": {
+    "message": "Mislukt: {0}"
+  },
+  "doneSummary": {
+    "message": "Klaar: {0} bewaard{1}{2}."
+  },
+  "doneFailedPart": {
+    "message": ", {0} mislukt"
+  },
+  "doneStopped": {
+    "message": "(gestopt)"
+  },
+  "stopAfterPage": {
+    "message": "Stoppen na deze pagina…"
+  },
+  "zipSiteDone": {
+    "message": "{0}, {1}. Open {2} of index.html in de map."
+  },
+  "pageTitleCompare": {
+    "message": "Vergelijken · Burg Archief"
+  },
+  "compareTitle": {
+    "message": "Versies vergelijken"
+  },
+  "compareMissing": {
+    "message": "Een van beide versies bestaat niet (meer)."
+  },
+  "old": {
+    "message": "Oud"
+  },
+  "new": {
+    "message": "Nieuw"
+  },
+  "oldVersion": {
+    "message": "Oude versie"
+  },
+  "newVersion": {
+    "message": "Nieuwe versie"
+  },
+  "swap": {
+    "message": "Wisselen"
+  },
+  "linesRemoved": {
+    "message": "regels weg"
+  },
+  "linesAdded": {
+    "message": "regels nieuw"
+  },
+  "linesChanged": {
+    "message": "gewijzigd"
+  },
+  "linesSame": {
+    "message": "hetzelfde"
+  },
+  "tabText": {
+    "message": "Tekst"
+  },
+  "tabSeo": {
+    "message": "Kenmerken"
+  },
+  "tabVisual": {
+    "message": "Naast elkaar"
+  },
+  "onlyChanges": {
+    "message": "Alleen wijzigingen"
+  },
+  "mhtmlNoPreview": {
+    "message": "MHTML-versies zijn hier niet te tonen; daarvan zie je de miniatuur."
+  },
+  "textIdentical": {
+    "message": "De tekst is precies hetzelfde."
+  },
+  "noText": {
+    "message": "Geen tekst om te vergelijken."
+  },
+  "gapOne": {
+    "message": "⋯ {0} ongewijzigde regel"
+  },
+  "gapMany": {
+    "message": "⋯ {0} ongewijzigde regels"
+  },
+  "savedAt": {
+    "message": "Bewaard"
+  },
+  "file": {
+    "message": "Bestand"
+  },
+  "seoTitle": {
+    "message": "Titel"
+  },
+  "seoDescription": {
+    "message": "Omschrijving"
+  },
+  "seoWords": {
+    "message": "Woorden"
+  },
+  "seoInternal": {
+    "message": "Interne links"
+  },
+  "seoImages": {
+    "message": "Afbeeldingen"
+  },
+  "thumbnail": {
+    "message": "Miniatuur"
+  },
+  "download": {
+    "message": "Downloaden"
+  },
+  "fullscreen": {
+    "message": "Volledig scherm"
+  },
+  "showDetails": {
+    "message": "Details tonen"
+  },
+  "notFound": {
+    "message": "Niet gevonden"
+  },
+  "notFoundText": {
+    "message": "Deze pagina staat niet (meer) in je archief."
+  },
+  "toArchive": {
+    "message": "Naar het archief"
+  },
+  "tabPage": {
+    "message": "Pagina"
+  },
+  "mhtmlNote": {
+    "message": "MHTML-bestanden kan Chrome alleen als los bestand openen. Download het bestand en open het in Chrome of Edge. Hieronder de miniatuur en de tekst van de pagina."
+  },
+  "savedPage": {
+    "message": "Bewaarde pagina"
+  },
+  "captured": {
+    "message": "Vastgelegd"
+  },
+  "date": {
+    "message": "Datum"
+  },
+  "address": {
+    "message": "Adres"
+  },
+  "size": {
+    "message": "Grootte"
+  },
+  "copy": {
+    "message": "Kopieer"
+  },
+  "copied": {
+    "message": "Gekopieerd"
+  },
+  "hashHint": {
+    "message": "De hash is een vingerafdruk van het bestand: verandert er één teken, dan verandert de hash. Handig als bewijs dat het bestand sinds het bewaren niet is aangepast. Geen juridisch bewijs."
+  },
+  "tagsAndNote": {
+    "message": "Tags en notitie"
+  },
+  "note": {
+    "message": "Notitie"
+  },
+  "versionsTitle": {
+    "message": "Versies van dit adres"
+  },
+  "pageProps": {
+    "message": "Pagina-kenmerken"
+  },
+  "openCurrent": {
+    "message": "Huidige versie openen"
+  },
+  "viewMeta": {
+    "message": "{0} · {1} · bewaard {2}"
+  },
+  "withStamp": {
+    "message": ", met stempel"
+  },
+  "linksInternal": {
+    "message": "{0} ({1} intern)"
+  },
+  "onlyThisVersion": {
+    "message": "Alleen deze versie. Bewaar de pagina later nog eens om te kunnen vergelijken."
+  },
+  "thisOne": {
+    "message": "deze"
+  },
+  "viewLower": {
+    "message": "bekijk"
+  },
+  "compareLower": {
+    "message": "vergelijk"
+  },
+  "noTextSaved": {
+    "message": "(Geen tekst bewaard.)"
+  },
+  "savedHint": {
+    "message": "Opgeslagen."
+  },
+  "confirmDelete": {
+    "message": "Zeker weten?"
+  }
+}

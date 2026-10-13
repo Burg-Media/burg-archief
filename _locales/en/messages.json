@@ -1,0 +1,608 @@
+{
+  "lang": {
+    "message": "en"
+  },
+  "locale": {
+    "message": "en-GB"
+  },
+  "extName": {
+    "message": "Burg Archive"
+  },
+  "extDescription": {
+    "message": "Save pages as one self-contained HTML file or MHTML, search your archive, compare versions and look up old versions on archive.org."
+  },
+  "cmdSavePage": {
+    "message": "Save page to the archive"
+  },
+  "menuSavePage": {
+    "message": "Save page to Burg Archive"
+  },
+  "menuOpenLibrary": {
+    "message": "Open my archive"
+  },
+  "menuSaveSite": {
+    "message": "Save whole site…"
+  },
+  "errAlreadySaving": {
+    "message": "This page is already being saved."
+  },
+  "badgeSaved": {
+    "message": "Burg Archive: saved ({0})"
+  },
+  "badgeError": {
+    "message": "Burg Archive: {0}"
+  },
+  "errNotCapturable": {
+    "message": "This page can't be saved (only regular http and https pages)."
+  },
+  "errNoContent": {
+    "message": "The page returned no content. Reload the page and try again."
+  },
+  "progScroll": {
+    "message": "Scrolling through the page for lazy loading…"
+  },
+  "progThumb": {
+    "message": "Creating thumbnail…"
+  },
+  "progMhtml": {
+    "message": "Creating MHTML…"
+  },
+  "progFreeze": {
+    "message": "Freezing page…"
+  },
+  "progResources": {
+    "message": "Fetching resources ({0}/{1})…"
+  },
+  "progSaving": {
+    "message": "Saving…"
+  },
+  "savedWith": {
+    "message": "Saved with Burg Archive"
+  },
+  "stampText": {
+    "message": "Saved with Burg Archive on {0}"
+  },
+  "pageFallback": {
+    "message": "page"
+  },
+  "overviewFile": {
+    "message": "OVERVIEW.html"
+  },
+  "overviewIntro": {
+    "message": "{0} pages, saved with Burg Archive. HTML files open in any browser; MHTML in Chrome or Edge."
+  },
+  "pageOne": {
+    "message": "{0} page"
+  },
+  "pageMany": {
+    "message": "{0} pages"
+  },
+  "savePage": {
+    "message": "Save page"
+  },
+  "unsupportedPage": {
+    "message": "This page can't be saved. Only regular http and https pages."
+  },
+  "format": {
+    "message": "Format"
+  },
+  "fmtHtml": {
+    "message": "Single HTML file"
+  },
+  "fmtMhtmlFast": {
+    "message": "MHTML (fast)"
+  },
+  "tagsPlaceholder": {
+    "message": "Tags, separated by commas"
+  },
+  "notePlaceholder": {
+    "message": "Note (optional)"
+  },
+  "lazyLabel": {
+    "message": "Scroll through first (loads lazy-loaded images)"
+  },
+  "stampLabel": {
+    "message": "Date and URL visible in the page (evidence)"
+  },
+  "historyTitle": {
+    "message": "This page in your archive"
+  },
+  "historyText": {
+    "message": "{0}× saved · last {1}"
+  },
+  "openLatest": {
+    "message": "View latest"
+  },
+  "saveCompare": {
+    "message": "Save and compare"
+  },
+  "wbCalendar": {
+    "message": "All versions"
+  },
+  "wbOldest": {
+    "message": "Oldest"
+  },
+  "wbNewest": {
+    "message": "Newest"
+  },
+  "wbSave": {
+    "message": "Archive now"
+  },
+  "wbDate": {
+    "message": "Date"
+  },
+  "wbAround": {
+    "message": "Version around date"
+  },
+  "wbAroundThis": {
+    "message": "Around this date"
+  },
+  "wbHint": {
+    "message": "Opens archive.org in a new tab."
+  },
+  "myArchive": {
+    "message": "My archive"
+  },
+  "saveSite": {
+    "message": "Save whole site"
+  },
+  "shortcut": {
+    "message": "Shortcut"
+  },
+  "madeBy": {
+    "message": "Made by"
+  },
+  "notAvailable": {
+    "message": "Not available"
+  },
+  "starting": {
+    "message": "Starting…"
+  },
+  "unknownError": {
+    "message": "Unknown error"
+  },
+  "savedLabel": {
+    "message": "Saved"
+  },
+  "view": {
+    "message": "View"
+  },
+  "pageTitleLibrary": {
+    "message": "My archive · Burg Archive"
+  },
+  "navArchive": {
+    "message": "Archive"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "libraryLead": {
+    "message": "Stored locally in this browser. Nothing is uploaded."
+  },
+  "searchPlaceholder": {
+    "message": "Search titles, URLs, tags, notes and the full text"
+  },
+  "sortLabel": {
+    "message": "Sort"
+  },
+  "sortNew": {
+    "message": "Newest first"
+  },
+  "sortOld": {
+    "message": "Oldest first"
+  },
+  "sortTitle": {
+    "message": "Title"
+  },
+  "sortHost": {
+    "message": "Site"
+  },
+  "sortSize": {
+    "message": "Largest first"
+  },
+  "all": {
+    "message": "All"
+  },
+  "none": {
+    "message": "None"
+  },
+  "latestOnly": {
+    "message": "Only the newest version per URL"
+  },
+  "downloadZip": {
+    "message": "Download as ZIP"
+  },
+  "compare": {
+    "message": "Compare"
+  },
+  "addTagsPlaceholder": {
+    "message": "Add tags"
+  },
+  "add": {
+    "message": "Add"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "clearSelection": {
+    "message": "Clear selection"
+  },
+  "select": {
+    "message": "Select"
+  },
+  "versionsOfUrl": {
+    "message": "{0} versions of this URL"
+  },
+  "libraryEmpty": {
+    "message": "Nothing saved yet. Click the Burg Archive icon on a page, or press Alt+Shift+A."
+  },
+  "nothingFound": {
+    "message": "Nothing found."
+  },
+  "showMore": {
+    "message": "Show more ({0})"
+  },
+  "selectedCount": {
+    "message": "{0} selected"
+  },
+  "pickTwo": {
+    "message": "Select exactly two pages"
+  },
+  "makingZip": {
+    "message": "Creating ZIP…"
+  },
+  "zipMade": {
+    "message": "ZIP created: {0} files, {1}."
+  },
+  "zipFailed": {
+    "message": "Creating the ZIP failed: {0}"
+  },
+  "tagsAdded": {
+    "message": "Tags added to {0} pages."
+  },
+  "confirmDeleteCount": {
+    "message": "Sure? Remove {0}"
+  },
+  "deletedOne": {
+    "message": "{0} page deleted."
+  },
+  "deletedMany": {
+    "message": "{0} pages deleted."
+  },
+  "pageTitleSite": {
+    "message": "Save whole site · Burg Archive"
+  },
+  "siteKicker": {
+    "message": "Before a redesign or migration"
+  },
+  "siteLead": {
+    "message": "Find the pages of a site through the sitemap or by following links, and save them all. Then download everything as one ZIP in which the links between the pages still work."
+  },
+  "stepFind": {
+    "message": "1 · Find pages"
+  },
+  "startUrl": {
+    "message": "Start URL"
+  },
+  "startPlaceholder": {
+    "message": "https://example.com/"
+  },
+  "method": {
+    "message": "Method"
+  },
+  "methodBoth": {
+    "message": "Sitemap, otherwise follow links"
+  },
+  "methodSitemap": {
+    "message": "Sitemap only"
+  },
+  "methodLinks": {
+    "message": "Follow links only"
+  },
+  "depth": {
+    "message": "Depth (following links)"
+  },
+  "depth1": {
+    "message": "1 click from start"
+  },
+  "depth2": {
+    "message": "2 clicks"
+  },
+  "depth3": {
+    "message": "3 clicks"
+  },
+  "depth5": {
+    "message": "5 clicks"
+  },
+  "maxPages": {
+    "message": "Maximum number of pages"
+  },
+  "samePath": {
+    "message": "Only pages under the path of the start URL"
+  },
+  "findPages": {
+    "message": "Find pages"
+  },
+  "stepPick": {
+    "message": "2 · Choose"
+  },
+  "filterPlaceholder": {
+    "message": "Filter by URL"
+  },
+  "stepRun": {
+    "message": "3 · Save"
+  },
+  "fmtMhtmlFaster": {
+    "message": "MHTML (faster)"
+  },
+  "waitAfterLoad": {
+    "message": "Wait after loading"
+  },
+  "wait05": {
+    "message": "0.5 seconds"
+  },
+  "wait15": {
+    "message": "1.5 seconds"
+  },
+  "wait3": {
+    "message": "3 seconds"
+  },
+  "wait6": {
+    "message": "6 seconds"
+  },
+  "tagsExample": {
+    "message": "e.g. before-redesign"
+  },
+  "lazySite": {
+    "message": "Scroll through each page first (lazy loading)"
+  },
+  "siteHint": {
+    "message": "The pages open in a separate window that you don't need to watch; leave it open until everything is done. Leave this tab open too. Pages where you are logged in are saved as you see them."
+  },
+  "startSaving": {
+    "message": "Start saving"
+  },
+  "stop": {
+    "message": "Stop"
+  },
+  "viewInArchive": {
+    "message": "View in archive"
+  },
+  "enterValidUrl": {
+    "message": "Enter a valid URL (https://…)."
+  },
+  "readingSitemap": {
+    "message": "Reading sitemap: {0}"
+  },
+  "followingLinks": {
+    "message": "Following links (depth {0}): {1} found"
+  },
+  "foundSitemap": {
+    "message": "{0} found via the sitemap."
+  },
+  "foundLinks": {
+    "message": "{0} found via links."
+  },
+  "noPagesFound": {
+    "message": "No pages found."
+  },
+  "findFailed": {
+    "message": "Search failed: {0}"
+  },
+  "statusBusy": {
+    "message": "working"
+  },
+  "statusOk": {
+    "message": "saved"
+  },
+  "statusErr": {
+    "message": "failed"
+  },
+  "statusSkip": {
+    "message": "stopped"
+  },
+  "pickedCount": {
+    "message": "{0} of {1} selected"
+  },
+  "opening": {
+    "message": "Opening: {0}"
+  },
+  "failedMsg": {
+    "message": "Failed: {0}"
+  },
+  "doneSummary": {
+    "message": "Done: {0} saved{1}{2}."
+  },
+  "doneFailedPart": {
+    "message": ", {0} failed"
+  },
+  "doneStopped": {
+    "message": "(stopped)"
+  },
+  "stopAfterPage": {
+    "message": "Stopping after this page…"
+  },
+  "zipSiteDone": {
+    "message": "{0}, {1}. Open {2} or index.html in the folder."
+  },
+  "pageTitleCompare": {
+    "message": "Compare · Burg Archive"
+  },
+  "compareTitle": {
+    "message": "Compare versions"
+  },
+  "compareMissing": {
+    "message": "One of the two versions no longer exists."
+  },
+  "old": {
+    "message": "Old"
+  },
+  "new": {
+    "message": "New"
+  },
+  "oldVersion": {
+    "message": "Old version"
+  },
+  "newVersion": {
+    "message": "New version"
+  },
+  "swap": {
+    "message": "Swap"
+  },
+  "linesRemoved": {
+    "message": "lines removed"
+  },
+  "linesAdded": {
+    "message": "lines added"
+  },
+  "linesChanged": {
+    "message": "changed"
+  },
+  "linesSame": {
+    "message": "unchanged"
+  },
+  "tabText": {
+    "message": "Text"
+  },
+  "tabSeo": {
+    "message": "Properties"
+  },
+  "tabVisual": {
+    "message": "Side by side"
+  },
+  "onlyChanges": {
+    "message": "Only changes"
+  },
+  "mhtmlNoPreview": {
+    "message": "MHTML versions can't be shown here; you see their thumbnail instead."
+  },
+  "textIdentical": {
+    "message": "The text is exactly the same."
+  },
+  "noText": {
+    "message": "No text to compare."
+  },
+  "gapOne": {
+    "message": "⋯ {0} unchanged line"
+  },
+  "gapMany": {
+    "message": "⋯ {0} unchanged lines"
+  },
+  "savedAt": {
+    "message": "Saved"
+  },
+  "file": {
+    "message": "File"
+  },
+  "seoTitle": {
+    "message": "Title"
+  },
+  "seoDescription": {
+    "message": "Description"
+  },
+  "seoWords": {
+    "message": "Words"
+  },
+  "seoInternal": {
+    "message": "Internal links"
+  },
+  "seoImages": {
+    "message": "Images"
+  },
+  "thumbnail": {
+    "message": "Thumbnail"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "fullscreen": {
+    "message": "Full screen"
+  },
+  "showDetails": {
+    "message": "Show details"
+  },
+  "notFound": {
+    "message": "Not found"
+  },
+  "notFoundText": {
+    "message": "This page is no longer in your archive."
+  },
+  "toArchive": {
+    "message": "Go to the archive"
+  },
+  "tabPage": {
+    "message": "Page"
+  },
+  "mhtmlNote": {
+    "message": "Chrome can only open MHTML files as a separate file. Download the file and open it in Chrome or Edge. Below are the thumbnail and the text of the page."
+  },
+  "savedPage": {
+    "message": "Saved page"
+  },
+  "captured": {
+    "message": "Captured"
+  },
+  "date": {
+    "message": "Date"
+  },
+  "address": {
+    "message": "URL"
+  },
+  "size": {
+    "message": "Size"
+  },
+  "copy": {
+    "message": "Copy"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "hashHint": {
+    "message": "The hash is a fingerprint of the file: if a single character changes, the hash changes. Useful as evidence that the file has not been modified since it was saved. Not legal proof."
+  },
+  "tagsAndNote": {
+    "message": "Tags and note"
+  },
+  "note": {
+    "message": "Note"
+  },
+  "versionsTitle": {
+    "message": "Versions of this URL"
+  },
+  "pageProps": {
+    "message": "Page properties"
+  },
+  "openCurrent": {
+    "message": "Open the current version"
+  },
+  "viewMeta": {
+    "message": "{0} · {1} · saved {2}"
+  },
+  "withStamp": {
+    "message": ", with stamp"
+  },
+  "linksInternal": {
+    "message": "{0} ({1} internal)"
+  },
+  "onlyThisVersion": {
+    "message": "Only this version. Save the page again later to be able to compare."
+  },
+  "thisOne": {
+    "message": "this one"
+  },
+  "viewLower": {
+    "message": "view"
+  },
+  "compareLower": {
+    "message": "compare"
+  },
+  "noTextSaved": {
+    "message": "(No text saved.)"
+  },
+  "savedHint": {
+    "message": "Saved."
+  },
+  "confirmDelete": {
+    "message": "Are you sure?"
+  }
+}

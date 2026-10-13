@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "short_name": "__MSG_extName__",
+  "version": "1.0.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "homepage_url": "https://burgmedia.eu/shop/burg-archief",
+  "minimum_chrome_version": "120",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "128": "images/icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "save-page": {
+      "suggested_key": { "default": "Alt+Shift+A" },
+      "description": "__MSG_cmdSavePage__"
+    }
+  },
+  "permissions": ["contextMenus", "pageCapture", "scripting", "storage", "tabs", "unlimitedStorage"],
+  "host_permissions": ["<all_urls>"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

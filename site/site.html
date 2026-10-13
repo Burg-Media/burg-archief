@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="pageTitleSite">Save whole site · Burg Archive</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <a class="brand" href="../library/library.html">
+        <img src="../images/icon_32.png" alt="" width="22" height="22" />
+        <span data-i18n="extName">Burg Archive</span>
+      </a>
+      <nav>
+        <a href="../library/library.html" data-i18n="navArchive">Archive</a>
+        <a href="site.html" class="on" data-i18n="saveSite">Save whole site</a>
+      </nav>
+    </header>
+
+    <main class="page narrow">
+      <p class="kicker" data-i18n="siteKicker">Before a redesign or migration</p>
+      <h1 class="title" data-i18n="saveSite">Save whole site</h1>
+      <p class="muted lead" data-i18n="siteLead">
+        Find the pages of a site through the sitemap or by following links, and save them all. Then download everything
+        as one ZIP in which the links between the pages still work.
+      </p>
+
+      <section class="card step">
+        <p class="lbl" data-i18n="stepFind">1 · Find pages</p>
+        <label class="field">
+          <span data-i18n="startUrl">Start URL</span>
+          <input type="url" id="start" placeholder="https://example.com/" data-i18n-placeholder="startPlaceholder" />
+        </label>
+        <div class="grid2">
+          <label class="field">
+            <span data-i18n="method">Method</span>
+            <select id="method">
+              <option value="both" data-i18n="methodBoth">Sitemap, otherwise follow links</option>
+              <option value="sitemap" data-i18n="methodSitemap">Sitemap only</option>
+              <option value="links" data-i18n="methodLinks">Follow links only</option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="depth">Depth (following links)</span>
+            <select id="depth">
+              <option value="1" data-i18n="depth1">1 click from start</option>
+              <option value="2" selected data-i18n="depth2">2 clicks</option>
+              <option value="3" data-i18n="depth3">3 clicks</option>
+              <option value="5" data-i18n="depth5">5 clicks</option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="maxPages">Maximum number of pages</span>
+            <input type="number" id="max" min="1" max="1000" value="100" />
+          </label>
+        </div>
+        <label class="check"><input type="checkbox" id="same-path" /> <span data-i18n="samePath">Only pages under the path of the start URL</span></label>
+        <div class="row">
+          <button id="discover" class="primary" data-i18n="findPages">Find pages</button>
+          <span id="discover-status" class="muted"></span>
+        </div>
+      </section>
+
+      <section id="step-pick" class="card step" hidden>
+        <div class="row between">
+          <p class="lbl" data-i18n="stepPick">2 · Choose</p>
+          <span id="pick-count" class="mono muted"></span>
+        </div>
+        <div class="row">
+          <input type="search" id="filter" placeholder="Filter by URL" data-i18n-placeholder="filterPlaceholder" />
+          <button id="all" class="small" data-i18n="all">All</button>
+          <button id="none" class="small" data-i18n="none">None</button>
+        </div>
+        <ul id="urls" class="urls"></ul>
+      </section>
+
+      <section id="step-run" class="card step" hidden>
+        <p class="lbl" data-i18n="stepRun">3 · Save</p>
+        <div class="grid2">
+          <label class="field">
+            <span data-i18n="format">Format</span>
+            <select id="format">
+              <option value="html" data-i18n="fmtHtml">Single HTML file</option>
+              <option value="mhtml" data-i18n="fmtMhtmlFaster">MHTML (faster)</option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="waitAfterLoad">Wait after loading</span>
+            <select id="wait">
+              <option value="500" data-i18n="wait05">0.5 seconds</option>
+              <option value="1500" selected data-i18n="wait15">1.5 seconds</option>
+              <option value="3000" data-i18n="wait3">3 seconds</option>
+              <option value="6000" data-i18n="wait6">6 seconds</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Tags</span>
+            <input type="text" id="tags" placeholder="e.g. before-redesign" data-i18n-placeholder="tagsExample" />
+          </label>
+        </div>
+        <label class="check"><input type="checkbox" id="lazy" checked /> <span data-i18n="lazySite">Scroll through each page first (lazy loading)</span></label>
+        <p class="hint" data-i18n="siteHint">
+          The pages open in a separate window that you don't need to watch; leave it open until everything is done.
+          Leave this tab open too. Pages where you are logged in are saved as you see them.
+        </p>
+        <div class="row">
+          <button id="run" class="primary" data-i18n="startSaving">Start saving</button>
+          <button id="stop" data-i18n="stop" hidden>Stop</button>
+        </div>
+        <div id="progress" class="progress" hidden>
+          <div class="bar"><span id="bar-fill"></span></div>
+          <span id="progress-text" class="mono"></span>
+        </div>
+        <div id="done" class="row" hidden>
+          <button id="zip" class="primary" data-i18n="downloadZip">Download as ZIP</button>
+          <a id="open-run" class="btn" href="#" data-i18n="viewInArchive">View in archive</a>
+          <span id="zip-status" class="muted"></span>
+        </div>
+      </section>
+    </main>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/db.js"></script>
+    <script src="../lib/zip.js"></script>
+    <script src="../lib/util.js"></script>
+    <script src="../lib/capture.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

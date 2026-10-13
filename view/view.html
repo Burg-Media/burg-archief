@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="extName">Burg Archive</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="view.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <a class="brand" href="../library/library.html">
+        <img src="../images/icon_32.png" alt="" width="22" height="22" />
+        <span data-i18n="extName">Burg Archive</span>
+      </a>
+      <div class="info">
+        <a id="page-url" target="_blank" rel="noopener noreferrer"></a>
+        <span id="page-meta" class="kicker"></span>
+      </div>
+      <div class="actions">
+        <button id="download" class="primary" data-i18n="download">Download</button>
+        <button id="fullscreen" data-i18n="fullscreen">Full screen</button>
+        <button id="delete" class="danger" data-i18n="delete">Delete</button>
+      </div>
+    </header>
+
+    <div id="missing" class="page" hidden>
+      <h1 class="title" data-i18n="notFound">Not found</h1>
+      <p class="muted"><span data-i18n="notFoundText">This page is no longer in your archive.</span> <a href="../library/library.html" data-i18n="toArchive">Go to the archive</a></p>
+    </div>
+
+    <div id="layout" class="layout" hidden>
+      <main class="preview">
+        <div class="tabs" role="tablist">
+          <button role="tab" data-tab="page" class="on" data-i18n="tabPage">Page</button>
+          <button role="tab" data-tab="text" data-i18n="tabText">Text</button>
+        </div>
+        <div id="mhtml-note" class="notice" data-i18n="mhtmlNote" hidden>
+          Chrome can only open MHTML files as a separate file. Download the file and open it in Chrome or Edge.
+          Below are the thumbnail and the text of the page.
+        </div>
+        <iframe id="frame" title="Saved page" data-i18n-title="savedPage" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe>
+        <img id="thumb-large" alt="Thumbnail" hidden />
+        <pre id="text" class="text" hidden></pre>
+      </main>
+
+      <aside class="side">
+        <h1 id="title" class="page-title"></h1>
+
+        <section>
+          <p class="lbl" data-i18n="captured">Captured</p>
+          <dl class="facts">
+            <dt data-i18n="date">Date</dt><dd id="f-date"></dd>
+            <dt data-i18n="address">URL</dt><dd id="f-url" class="mono break"></dd>
+            <dt data-i18n="format">Format</dt><dd id="f-kind"></dd>
+            <dt data-i18n="size">Size</dt><dd id="f-size" class="mono"></dd>
+            <dt>SHA-256</dt><dd><span id="f-hash" class="mono break hash"></span> <button id="copy-hash" class="small" data-i18n="copy">Copy</button></dd>
+          </dl>
+          <p class="hint" data-i18n="hashHint">The hash is a fingerprint of the file: if a single character changes, the hash changes. Useful as evidence that the file has not been modified since it was saved. Not legal proof.</p>
+        </section>
+
+        <section>
+          <p class="lbl" data-i18n="tagsAndNote">Tags and note</p>
+          <input type="text" id="tags" placeholder="Tags, separated by commas" data-i18n-placeholder="tagsPlaceholder" autocomplete="off" />
+          <textarea id="note" rows="3" placeholder="Note" data-i18n-placeholder="note"></textarea>
+          <span id="saved-hint" class="hint"></span>
+        </section>
+
+        <section id="versions-section">
+          <p class="lbl" data-i18n="versionsTitle">Versions of this URL</p>
+          <ul id="versions" class="versions"></ul>
+        </section>
+
+        <section id="seo-section" hidden>
+          <p class="lbl" data-i18n="pageProps">Page properties</p>
+          <dl id="seo" class="facts"></dl>
+        </section>
+
+        <section>
+          <p class="lbl">Wayback Machine</p>
+          <div class="row">
+            <button class="small" data-wb="calendar" data-i18n="wbCalendar">All versions</button>
+            <button class="small" data-wb="oldest" data-i18n="wbOldest">Oldest</button>
+            <button class="small" data-wb="saved" data-i18n="wbAroundThis">Around this date</button>
+            <button class="small" data-wb="save" data-i18n="wbSave">Archive now</button>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/db.js"></script>
+    <script src="../lib/util.js"></script>
+    <script src="view.js"></script>
+  </body>
+</html>

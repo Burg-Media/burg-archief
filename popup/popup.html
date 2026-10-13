@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="extName">Burg Archive</title>
+    <link rel="stylesheet" href="../lib/ui.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon_48.png" alt="" width="24" height="24" />
+      <div class="pt">
+        <strong data-i18n="extName">Burg Archive</strong>
+        <span class="host" id="host" data-i18n="savePage">Save page</span>
+      </div>
+    </header>
+
+    <div id="unsupported" class="notice unsupported" data-i18n="unsupportedPage" hidden>
+      This page can't be saved. Only regular http and https pages.
+    </div>
+
+    <div class="actions">
+      <button class="action primary" id="save">
+        <span class="title" data-i18n="savePage">Save page</span>
+        <span class="sub" id="save-sub"></span>
+      </button>
+      <div class="segment" role="radiogroup" aria-label="Format" data-i18n-aria-label="format">
+        <label><input type="radio" name="format" value="html" /> <span data-i18n="fmtHtml">Single HTML file</span></label>
+        <label><input type="radio" name="format" value="mhtml" /> <span data-i18n="fmtMhtmlFast">MHTML (fast)</span></label>
+      </div>
+    </div>
+
+    <div id="status" class="status" hidden>
+      <div class="bar"><span id="bar-fill"></span></div>
+      <span id="status-text"></span>
+    </div>
+    <div id="result" class="result" hidden></div>
+
+    <section class="fields">
+      <input type="text" id="tags" placeholder="Tags, separated by commas" data-i18n-placeholder="tagsPlaceholder" autocomplete="off" />
+      <textarea id="note" rows="2" placeholder="Note (optional)" data-i18n-placeholder="notePlaceholder"></textarea>
+      <label class="check"><input type="checkbox" id="lazy" /> <span data-i18n="lazyLabel">Scroll through first (loads lazy-loaded images)</span></label>
+      <label class="check"><input type="checkbox" id="stamp" /> <span data-i18n="stampLabel">Date and URL visible in the page (evidence)</span></label>
+    </section>
+
+    <section id="history" class="block" hidden>
+      <p class="lbl" data-i18n="historyTitle">This page in your archive</p>
+      <p id="history-text" class="history-text"></p>
+      <div class="row">
+        <button id="open-latest" class="small" data-i18n="openLatest">View latest</button>
+        <button id="save-compare" class="small" data-i18n="saveCompare">Save and compare</button>
+      </div>
+    </section>
+
+    <section class="block">
+      <p class="lbl">Wayback Machine</p>
+      <div class="row wrap">
+        <button class="small" data-wb="calendar" data-i18n="wbCalendar">All versions</button>
+        <button class="small" data-wb="oldest" data-i18n="wbOldest">Oldest</button>
+        <button class="small" data-wb="newest" data-i18n="wbNewest">Newest</button>
+        <button class="small" data-wb="save" data-i18n="wbSave">Archive now</button>
+      </div>
+      <div class="row around">
+        <input type="date" id="wb-date" aria-label="Date" data-i18n-aria-label="wbDate" />
+        <button class="small" data-wb="around" data-i18n="wbAround">Version around date</button>
+      </div>
+      <p class="hint" data-i18n="wbHint">Opens archive.org in a new tab.</p>
+    </section>
+
+    <footer>
+      <a href="../library/library.html" target="_blank" data-i18n="myArchive">My archive</a>
+      <a href="#" id="site" data-i18n="saveSite">Save whole site</a>
+      <a href="#" id="shortcuts" data-i18n="shortcut">Shortcut</a>
+    </footer>
+
+    <p class="made-by"><span data-i18n="madeBy">Made by</span> <a href="https://burgmedia.eu/?utm_source=burg-archief&amp;utm_medium=extension&amp;utm_campaign=popup" target="_blank" rel="noopener">Burg Media</a></p>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/util.js"></script>
+    <script src="../lib/db.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
